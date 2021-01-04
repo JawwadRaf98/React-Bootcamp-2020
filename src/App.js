@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState , useContext } from 'react'
 import './App.css';
+import Room from './Component/Room';
+import Name from './Component/Name';
+import Counter1 from './Component/Counter1';
+import Counter2 from './Component/Counter2';
+import CounterContext from './store/context/CounterContext';
 
 function App() {
+  const counterContext = useState(useContext(CounterContext), ()=>{})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Room />
+        <Name />
+
+      <CounterContext.Provider value = {counterContext} >
+        <Counter1 />
+      </CounterContext.Provider>
+
+
+
+      <Counter2 />
     </div>
   );
 }

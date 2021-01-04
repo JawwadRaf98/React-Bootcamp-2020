@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+.counterDiv{
+  border: 1px solid black;
+  border-radius:10px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 320px ;
+  max-height: 320px;
+  /* margin: 30px; */
+}
+.counterDiv button{
+  margin: 5px ;
+}
+.roomComponent{
+  border: 1px solid black;
+  border-radius:10px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 320px ;
+  max-height: 320px;
+}
+.lightOn{
+  color: black;
+  background-color: #fff;
+}
+.lightOff{
+  color: white;
+  background-color: black;
+}
