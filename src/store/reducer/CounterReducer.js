@@ -7,4 +7,5 @@ const CounterReducer = (state, action) => {
       
     }
   }
+  
 export default CounterReducer;
